@@ -3,44 +3,40 @@
     padding: 0;
 }
 
+body{
+    background-color: #6AECA9 !important;
+}
+
+header{
+    background-color: #6AECA9;
+    height: 75px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+}
+
 #header{
-    background-color: yellow;
-    height: 80px;
+    overflow: visible;
+    height: 75px;
+    z-index: 100;
+}
+
+a:hover{
+    box-shadow: 2px 13px 120px 23px rgba(0,0,0,0.26) inset;
+-webkit-box-shadow: 2px 13px 120px 23px rgba(0,0,0,0.26) inset;
+-moz-box-shadow: 2px 13px 120px 23px rgba(0,0,0,0.26) inset;
 }
 
 
-/* ul{
-    border: 1px solid black;
-} */
-
-a{
-    border: 1px solid blue;
-}
-
-nav{
-
-    border: 1px solid yellow
-}
-
-#nav-buttons{
-    border: 1px solid yellow;
+ul{
+    list-style-type: none;
 }
 
 main{
-    border: 1px solid black;
-    height: 1000px;
-}
-
-.carrousel{
-    border: 1px solid black;
-}
-
-.container{
-    border: 1px solid black;
-}
-
-.cards{
-    border: 1px solid black;
+    height: 2100px;
 }
 
 .test{
@@ -48,5 +44,48 @@ main{
 }
 
 footer{
-    height: 200px;
+    height: 100px;
+    background-color: #10693B;
 }
+
+.nav-link{
+    display: inline !important;
+}
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 2.5em !important;
+    height: 3em !important;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.border-dark {
+    /* --bs-border-opacity: 1; */
+    border-color: rgba(var(--bs-dark-rgb)) !important;
+}
+
+.carrousel{
+    box-shadow: -1px 15px 26px 9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 15px 26px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 15px 26px 9px rgba(0,0,0,0.75);
+}
+
+.card{
+    border: 1px solid white !important;
+    background-color: #23E882 !important;
+    box-shadow: -1px 15px 26px 9px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 15px 26px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 15px 26px 9px rgba(0,0,0,0.75);
+}
+/* .card-img{
+    height: 50%;
+} */
+
+
+
+
