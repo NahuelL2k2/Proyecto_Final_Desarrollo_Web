@@ -86,7 +86,11 @@ footer{
     height: 50%;
 } */
 
-
+.about-us-img{
+    box-shadow: 3px 12px 27px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 12px 27px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 12px 27px 4px rgba(0,0,0,0.75);
+}
 
 
 /* ----------------- MEDIA QUERYS ----------------------------- */
@@ -96,7 +100,9 @@ footer{
     main {
         height: 2500px !important;
     }
-
+    #img-about-is{
+        width: 500px !important;
+    }
 }
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -109,6 +115,9 @@ footer{
         padding: 15px;
         width: 100%;
     }
+    .sm-size{
+        font-size: 1em !important;
+    }
 }
 
 /*Medium devices (tablets, less than 992px)*/
@@ -120,6 +129,9 @@ footer{
         background-color: white;
         padding: 15px;
         width: 100%;
+    }
+    .sm-size{
+        font-size: 1em !important;
     }
 }
 
