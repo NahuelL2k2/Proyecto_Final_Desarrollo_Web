@@ -1,146 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Catalogo</title>
+    <title>Catalogo de productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-    <nav>
-        <header>
-            <div id="header__logo">
-                <img src="../assets/images/logo-genericowebp.webp" alt="">
+    <!------------------------------------------- HEADER -------------------------------------------->
+    <header class="container-fluid">
+        <div class="container">
+            <div id="header" class="row">
+                <nav class="navbar navbar-expand-lg navbar-light h-100 col-12 p-0">
+                    <div class="container-fluid p-0 m-0 h-100">
+                        <a class="navbar-brand h-100 w-25 p-0 m-0" href="#"><img class="w-75 h-100 rounded"
+                                src="../assets/images/chem-logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end p-0 m-0" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link px-4 py-4 text-uppercase" aria-current="page"
+                                        href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-4 py-4 text-uppercase" href="./catalogo.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-4 py-4 text-uppercase" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-4 py-4 text-uppercase" href="./sobre-nosotros.html" tabindex="-1"
+                                        aria-disabled="true">Sobre
+                                        Nosotros</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="header__contenedor-botones">
-                <div class="header__contenedor-botones__boton">
-                    <a href="../inicio.html">INICIO</a>
+        </div>
+
+    </header>
+    <main class="container-fluid text-center">
+        <div class="container" id="main">
+            <h1 class="mt-4 display-2">Alcoholes</h1>
+            <div class="row p-0 m-0 card-group">
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">METANOL</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
+                    </div>
                 </div>
-                <div class="header__contenedor-botones__boton">
-                    <a href="./catalogo.html">PRODUCTOS</a>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ETANOL</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
+                    </div>
                 </div>
-                <div class="header__contenedor-botones__boton">
-                    <a href="./contacto.html">CONTACTO</a>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ISOPROPANOL</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
+                    </div>
                 </div>
-                <div class="header__contenedor-botones__boton">
-                    <a href="./sobre-nosotros.html">SOBRE NOSOTROS</a>
+            </div>
+            <h2 class="mt-4 display-2">Aldehidos</h2>
+            <div class="row p-0 m-0 card-group">
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FORMOL</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ETANAL (ACETALDEHIDO)</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PROPANAL (PROPIONALDEHIDO)</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
+                    </div>
                 </div>
             </div>
-        </header>
-    </nav>
-    <main>
-        <div class="main__contenedor-principal">
-            <div class="main__contenedor-principal__filas">
-                <h2>Catalogo de Productos</h2>
-                <h4 id="categoria-1" class="categoria">Categoria 1</h4>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
+            <h2 class="mt-4 display-2">Éteres</h2>
+            <div class="row p-0 m-0 card-group">
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dimetil Éter</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
                     </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
+                </div>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dietil Éter</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
                     </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
+                </div>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Etil Metil Éter</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="main__contenedor-principal__filas">
-                <h4 id="categoria-2" class="categoria">Categoria 2</h4>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
+            <h2 class="mt-4 display-2">Ácidos</h2>
+            <div class="row p-0 m-0 card-group">
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Acido Acético</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
                     </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
+                </div>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ácido Sulfúrico</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
                     </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
+                </div>
+                <div class="card col-4">
+                    <img src="../assets/images/elemento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ácido Nítrico</h5>
+                        <a href="./producto.html" class="btn btn-primary text-uppercase w-100">Ver más</a>
                     </div>
-                </a>
-            </div>
-            <div class="main__contenedor-principal__filas">
-                <h4 id="categoria-3" class="categoria">Categoria 3</h4>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
-                    </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
-                    </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="main__contenedor-principal__filas">
-                <h4 id="categoria-4" class="categoria">Categoria 4</h4>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
-                    </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
-                    </div>
-                </a>
-                <a href="./producto.html">
-                    <div class="main__contenedor-principal__filas__elemento">
-                        <img src="../assets/images/elemento.jpg" alt="">
-                        <h3>Producto en venta</h3>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer__seccion-indice">
-            <h2>NOMBRE EMPRESA</h2>
-            <nav>
-                <ul>
-                    <li><a href="../inicio.html">INICIO</a></li>
-                    <li><a href="./catalogo.html">PRODUCTOS</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                    <li><a href="./sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="">Terminos y condiciones</a></li>
-                    <h4>Copyright 2022</h4>
-                    <h4>Direccion de la empresa</h4>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer__seccion-logos">
-            <nav>
-                <a href=""><img src="../assets/images/gmail_logo.png" alt=""></a>
-                <a href=""><img src="../assets/images/logo-instagram.jpg" alt=""></a>
-                <a href=""><img src="../assets/images/logotipo-facebook.png" alt=""></a>
-                <a href=""><img src="../assets/images/logo-twitter.png" alt=""></a>
-            </nav>
+    <!-- ---------------------------------------FOOTER----------------------------------------- -->
+    <footer class="container-fluid mt-5">
+        <div class="container h-100 d-flex justify-content-center align-items-end">
+            <h6 class="text-muted font-monospace me-2">Copyright 2022</h6>
+            <a class="text-muted font-monospace">
+                <h6>Ver Terminos</h6>
+            </a>
         </div>
     </footer>
 </body>
+
 </html>
