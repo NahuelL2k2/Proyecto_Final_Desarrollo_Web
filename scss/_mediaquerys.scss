@@ -1,0 +1,43 @@
+@media (max-width: 991px){
+    .nav-item{
+        background-color: white;
+        padding: 15px;
+        width: 100%;
+    }
+}
+@media (max-width: 1439px){
+    .carousel-inner{
+        height: 500px;
+    }
+}
+
+@media (max-width: 991px){
+    .carousel-inner{
+        height: 400px;
+    }
+}
+
+@media (max-width: 767px){
+    .carousel-inner{
+        height: 300px;
+    }
+    .card-group{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .card {
+        width: 200px !important;
+    }
+    #especificaciones{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 473px){
+    .carousel-inner{
+        display: none;
+    }
+    #especificaciones{
+        font-size: 16px ;
+    }
+}

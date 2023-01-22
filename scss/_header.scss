@@ -1,0 +1,16 @@
+#header{
+    overflow: visible;
+    height: 75px;
+    z-index: 100;
+}
+
+header{
+    background-color: #6AECA9;
+    height: 75px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+}
