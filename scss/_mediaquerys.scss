@@ -1,25 +1,55 @@
-@media (max-width: 991px){
+
+@media (max-width: map-get($grid-breakpoints, xxl)){
+    .carousel-inner {
+        height: 590px;
+    }
+    
+    .carousel-item{
+        height: 590px;
+    }   
+}
+
+@media (max-width: map-get($grid-breakpoints, xl)){
+    .carousel-inner {
+        height: 540px;
+    }
+    
+    .carousel-item{
+        height: 540px;
+    }    
+}
+
+@media (max-width: map-get($grid-breakpoints, lg)){
+    .carousel-inner {
+        height: 405px;
+    }
+    
+    .carousel-item{
+        height: 405px;
+    }    
     .nav-item{
         background-color: white;
         padding: 15px;
-        width: 100%;
+        text-align: center
     }
-}
-@media (max-width: 1439px){
-    .carousel-inner{
-        height: 500px;
+    .carousel-caption{
+        .fs-1{
+            font-size: 20px !important;
+        }
+        .fs-4{
+            font-size: 15px !important;
+        }
     }
+
 }
 
-@media (max-width: 991px){
-    .carousel-inner{
-        height: 400px;
+@media (max-width: map-get($grid-breakpoints, md)){
+    .carousel-inner {
+        height: 305px;
     }
-}
-
-@media (max-width: 767px){
-    .carousel-inner{
-        height: 300px;
+    
+    .carousel-item{
+        height: 305px;
     }
     .card-group{
         flex-direction: column !important;
@@ -31,9 +61,18 @@
     #especificaciones{
         font-size: 22px;
     }
+
+    .carousel-caption{
+        .fs-1{
+            font-size: 15px !important;
+        }
+        .fs-4{
+            font-size: 10px !important;
+        }
+    }
 }
 
-@media (max-width: 473px){
+@media (max-width: map-get($grid-breakpoints, sm)){
     .carousel-inner{
         display: none;
     }

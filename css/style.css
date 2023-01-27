@@ -3,7 +3,9 @@
   padding: 0; }
 
 body {
-  background-color: #6AECA9 !important; }
+  background: #00e06e;
+  background: linear-gradient(80deg, #00e06e 0%, #6aeca9 50%, #00e06e 100%);
+  overflow-x: hidden; }
 
 #header {
   overflow: visible;
@@ -39,9 +41,13 @@ header {
 .carrousel {
   box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75); }
+  -moz-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
+  height: 650px; }
 
 .carousel-inner {
+  height: 650px; }
+
+.carousel-item {
   height: 650px; }
 
 .card {
@@ -60,32 +66,50 @@ footer {
   height: 100px;
   background-color: #10693B; }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
+  .carousel-inner {
+    height: 590px; }
+  .carousel-item {
+    height: 590px; } }
+
+@media (max-width: 1200px) {
+  .carousel-inner {
+    height: 540px; }
+  .carousel-item {
+    height: 540px; } }
+
+@media (max-width: 992px) {
+  .carousel-inner {
+    height: 405px; }
+  .carousel-item {
+    height: 405px; }
   .nav-item {
     background-color: white;
     padding: 15px;
-    width: 100%; } }
+    text-align: center; }
+  .carousel-caption .fs-1 {
+    font-size: 20px !important; }
+  .carousel-caption .fs-4 {
+    font-size: 15px !important; } }
 
-@media (max-width: 1439px) {
+@media (max-width: 768px) {
   .carousel-inner {
-    height: 500px; } }
-
-@media (max-width: 991px) {
-  .carousel-inner {
-    height: 400px; } }
-
-@media (max-width: 767px) {
-  .carousel-inner {
-    height: 300px; }
+    height: 305px; }
+  .carousel-item {
+    height: 305px; }
   .card-group {
     flex-direction: column !important;
     align-items: center !important; }
   .card {
     width: 200px !important; }
   #especificaciones {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .carousel-caption .fs-1 {
+    font-size: 15px !important; }
+  .carousel-caption .fs-4 {
+    font-size: 10px !important; } }
 
-@media (max-width: 473px) {
+@media (max-width: 576px) {
   .carousel-inner {
     display: none; }
   #especificaciones {
