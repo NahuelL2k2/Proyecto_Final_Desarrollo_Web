@@ -1,82 +1,154 @@
-
-@media (max-width: map-get($grid-breakpoints, xxl)){
+@media (max-width: map-get($grid-breakpoints, xxl)) {
     .carousel-inner {
-        height: 590px;
+        height: 590px !important;
     }
-    
-    .carousel-item{
-        height: 590px;
-    }   
+
+    .carousel-item {
+        height: 590px !important;
+    }
 }
 
-@media (max-width: map-get($grid-breakpoints, xl)){
+@media (max-width: map-get($grid-breakpoints, xl)) {
     .carousel-inner {
-        height: 540px;
+        height: 540px !important;
     }
-    
-    .carousel-item{
-        height: 540px;
-    }    
+
+    .carousel-item {
+        height: 540px !important;
+    }
 }
 
-@media (max-width: map-get($grid-breakpoints, lg)){
-    .carousel-inner {
-        height: 405px;
-    }
-    
-    .carousel-item{
-        height: 405px;
-    }    
-    .nav-item{
+@media (max-width: 991px) {
+    .nav-item {
         background-color: white;
         padding: 15px;
         text-align: center
     }
-    .carousel-caption{
-        .fs-1{
+}
+
+@media (max-width: map-get($grid-breakpoints, lg)) {
+    .carousel-inner {
+        height: 405px !important;
+    }
+
+    .carousel-item {
+        height: 405px !important;
+    }
+
+    .carousel-caption {
+        .fs-1 {
             font-size: 20px !important;
         }
-        .fs-4{
+
+        .fs-4 {
             font-size: 15px !important;
         }
     }
 
+    .card {
+        height: 400px !important;
+
+        .card-img {
+            height: 50% !important;
+        }
+
+        .card-body {
+            h5 {
+                font-size: 25px !important;
+            }
+        }
+    }
 }
 
-@media (max-width: map-get($grid-breakpoints, md)){
+@media (max-width: map-get($grid-breakpoints, md)) {
     .carousel-inner {
-        height: 305px;
+        height: 305px !important;
     }
-    
-    .carousel-item{
-        height: 305px;
+
+    .carousel-item {
+        height: 305px !important;
     }
-    .card-group{
-        flex-direction: column !important;
-        align-items: center !important;
-    }
+
     .card {
-        width: 200px !important;
+        width: 240px !important;
+        height: 300px !important;
+
+        .card-img {
+            height: 50%;
+        }
+
+        .card-body {
+            h5 {
+                font-size: 15px !important;
+            }
+
+            p {
+                font-size: 10px !important;
+            }
+
+            a {
+                font-size: 15px !important;
+            }
+        }
+
     }
-    #especificaciones{
+
+    #especificaciones {
         font-size: 22px;
     }
 
-    .carousel-caption{
-        .fs-1{
+    .carousel-caption {
+        .fs-1 {
             font-size: 15px !important;
         }
-        .fs-4{
+
+        .fs-4 {
             font-size: 10px !important;
         }
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, sm)){
-    .carousel-inner{
+@media (max-width: map-get($grid-breakpoints, sm)) {
+    .carousel-inner {
         display: none;
     }
-    #especificaciones{
-        font-size: 16px ;
+
+    #especificaciones {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 220px !important;
+        height: 300px !important;
+        box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.75);
+        ;
+
+        .card-img {
+            height: 50%;
+        }
+
+        .card-body {
+            h5 {
+                font-size: 15px !important;
+            }
+
+            p {
+                font-size: 10px !important;
+            }
+
+            a {
+                font-size: 15px !important;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    .sm-card-group{
+        flex-direction: column !important;
+        align-content: center !important;
     }
 }

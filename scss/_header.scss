@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: #6AECA9;
+    background-color: map-get($map: $PaletaDeColores, $key: color2);
     height: 75px;
     top: 0;
     position: sticky;
@@ -13,4 +13,25 @@ header{
     box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 1px 6px 9px rgba(0,0,0,0.75);
+}
+
+.nav-link{
+    display: inline !important;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 2.5em !important;
+    height: 3em !important;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.icon{
+    height: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;;
 }

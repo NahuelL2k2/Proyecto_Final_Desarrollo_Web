@@ -1,5 +1,4 @@
 body{
-    background: rgb(0,224,110);
-    background: linear-gradient(80deg, rgba(0,224,110,1) 0%, rgba(106,236,169,1) 50%, rgba(0,224,110,1) 100%);
+    background-color: map-get($map: $PaletaDeColores, $key: color3) !important;
     overflow-x: hidden;
 }
