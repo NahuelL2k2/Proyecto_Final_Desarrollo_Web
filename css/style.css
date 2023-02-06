@@ -104,6 +104,55 @@ header {
   transform: scale(1.05) !important;
   background: linear-gradient(135deg, white 0%, #70e67a 59%) !important; }
 
+.product-card {
+  height: 360px !important; }
+  .product-card img {
+    height: 75% !important; }
+  .product-card .card-body h5 {
+    font-size: 22px;
+    letter-spacing: 2px; }
+  .product-card .card-body a {
+    letter-spacing: 3px; }
+
+.title {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 7px;
+  font-family: 'Times New Roman', Times, serif !important; }
+
+.title::before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  right: 0; }
+
+.title span {
+  display: inline-block;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif !important; }
+
+.title span:before,
+.title span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin-top: 40px;
+  width: 470px; }
+
+.title span:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.title span:after {
+  left: 100%;
+  margin-left: 15px; }
+
 .about-us-img {
   box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75);
@@ -117,19 +166,49 @@ footer {
   .carousel-inner {
     height: 590px !important; }
   .carousel-item {
-    height: 590px !important; } }
+    height: 590px !important; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 350px; }
+  .card-body h5 {
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    padding: 0;
+    margin-bottom: 0; }
+  .card-body a span {
+    letter-spacing: 3px; } }
 
 @media (max-width: 1200px) {
   .carousel-inner {
     height: 540px !important; }
   .carousel-item {
-    height: 540px !important; } }
+    height: 540px !important; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 290px; }
+  .card-family {
+    justify-content: space-evenly; }
+  .col {
+    flex: 0 0 0 !important; }
+  .product-card {
+    width: 300px; }
+  .card-body h5 {
+    margin-bottom: 10px; }
+  .card-body a span {
+    font-size: 14px;
+    letter-spacing: 3px; } }
 
 @media (max-width: 991px) {
   .nav-item {
     background-color: white;
     padding: 15px;
-    text-align: center; } }
+    text-align: center; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 180px; } }
 
 @media (max-width: 992px) {
   .carousel-inner {
@@ -145,7 +224,13 @@ footer {
     .card .card-img {
       height: 50% !important; }
     .card .card-body h5 {
-      font-size: 25px !important; } }
+      font-size: 25px !important; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 100px; }
+  .about-text {
+    font-size: 15px !important; } }
 
 @media (max-width: 768px) {
   .carousel-inner {
@@ -168,7 +253,21 @@ footer {
   .carousel-caption .fs-1 {
     font-size: 15px !important; }
   .carousel-caption .fs-4 {
-    font-size: 10px !important; } }
+    font-size: 10px !important; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 80px; }
+  .row-cols-1 > * {
+    flex: 0 0 0 !important; }
+  .product-card {
+    width: 250px !important; }
+    .product-card .card-body h5 {
+      font-size: 20px !important;
+      margin-bottom: 0px; }
+    .product-card .card-body a span {
+      font-size: 10px;
+      letter-spacing: 3px; } }
 
 @media (max-width: 576px) {
   .carousel-inner {
@@ -188,9 +287,30 @@ footer {
     .card .card-body p {
       font-size: 10px !important; }
     .card .card-body a {
-      font-size: 15px !important; } }
+      font-size: 15px !important; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 30px; }
+  .card-family {
+    justify-content: space-evenly; }
+  .col {
+    flex: 0 0 0% !important; }
+  .product-card {
+    width: 200px !important; }
+    .product-card .card-body h5 {
+      font-size: 20px !important;
+      margin-bottom: 3px; }
+    .product-card .card-body a span {
+      font-size: 7px !important; }
+  .about-text {
+    font-size: 10px !important; } }
 
 @media (max-width: 500px) {
   .sm-card-group {
     flex-direction: column !important;
-    align-content: center !important; } }
+    align-content: center !important; }
+  .title span:before,
+  .title span:after {
+    content: "";
+    width: 15px; } }

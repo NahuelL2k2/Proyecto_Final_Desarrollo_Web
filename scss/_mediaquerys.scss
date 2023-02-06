@@ -6,6 +6,29 @@
     .carousel-item {
         height: 590px !important;
     }
+
+    //Catalogo
+
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 350px;
+    }
+
+    .card-body{
+        h5{
+            font-size: 1.7rem;
+            letter-spacing: 3px;
+            padding: 0;
+            margin-bottom: 0;
+            
+        }
+        a{
+            span {
+                letter-spacing: 3px;
+            }
+        }
+    }
 }
 
 @media (max-width: map-get($grid-breakpoints, xl)) {
@@ -16,6 +39,38 @@
     .carousel-item {
         height: 540px !important;
     }
+
+    //Catalogo
+
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 290px;
+    }
+
+    .card-family{
+        justify-content: space-evenly;
+    }
+
+    .col {
+        flex: 0 0 0 !important;
+    }
+
+    .product-card{
+        width: 300px;
+    }
+
+    .card-body{
+        h5{
+            margin-bottom: 10px;
+        }
+        a{
+            span {
+                font-size: 14px;
+                letter-spacing: 3px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -24,9 +79,18 @@
         padding: 15px;
         text-align: center
     }
+
+    //Catalogo
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 180px;
+    }
 }
 
 @media (max-width: map-get($grid-breakpoints, lg)) {
+
+    // Index
     .carousel-inner {
         height: 405px !important;
     }
@@ -58,9 +122,26 @@
             }
         }
     }
+
+    // Catalogo
+
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 100px;
+    }
+
+    //Sobre Nosotros
+
+    .about-text{
+        font-size: 15px !important;
+    }
+
 }
 
 @media (max-width: map-get($grid-breakpoints, md)) {
+
+    //Index
     .carousel-inner {
         height: 305px !important;
     }
@@ -106,9 +187,41 @@
             font-size: 10px !important;
         }
     }
+
+    //Catalogo
+
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 80px;
+    }
+
+    .row-cols-1>* {
+        flex: 0 0 0 !important; 
+    }
+
+    .product-card{
+        width: 250px !important;
+
+        .card-body{
+            h5{
+                font-size: 20px !important;
+                margin-bottom: 0px;
+            }
+            a{
+                span {
+                    font-size: 10px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: map-get($grid-breakpoints, sm)) {
+
+    //Index
     .carousel-inner {
         display: none;
     }
@@ -142,13 +255,60 @@
                 font-size: 15px !important;
             }
         }
-
     }
+
+    // Catalogo
+    
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 30px;
+    }
+
+    .card-family{
+        justify-content: space-evenly;
+    }
+
+    .col{
+        flex: 0 0 0% !important;
+    }
+
+    .product-card{
+        width: 200px !important;
+        .card-body{
+            h5{
+                font-size: 20px !important;
+                margin-bottom: 3px;
+            }
+            a{
+                span{
+                    font-size: 7px !important;
+                }
+            }
+        }
+    }
+
+    //Sobre Nosotros
+
+    .about-text{
+        font-size: 10px !important;
+    }
+
+
+    
 }
 
 @media (max-width: 500px) {
     .sm-card-group{
         flex-direction: column !important;
         align-content: center !important;
+    }
+
+    //Catalogo 
+
+    .title span:before,
+    .title span:after {
+        content: "";
+        width: 15px;
     }
 }

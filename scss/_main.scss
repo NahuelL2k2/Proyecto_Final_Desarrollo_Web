@@ -1,5 +1,6 @@
 #main {
     height: auto;
+
 }
 
 .carrousel {
@@ -87,12 +88,75 @@
     }
 }
 
-.card:hover{
+.card:hover {
     z-index: 50;
     transform: scale(1.05) !important;
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(112,230,122,1) 59%) !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(112, 230, 122, 1) 59%) !important;
 }
 
+.product-card {
+    height: 360px !important;
+
+    img {
+        height: 75% !important;
+    }
+
+    .card-body{
+        h5{
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+        
+        a{
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 7px;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+}
+
+.title span {
+    display: inline-block;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.title span:before,
+.title span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin-top: 40px;
+    width: 470px;
+}
+
+.title span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title span:after {
+    left: 100%;
+    margin-left: 15px;
+}
 
 
 .about-us-img {
