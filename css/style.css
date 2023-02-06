@@ -120,11 +120,15 @@ header {
   .product-card .card-body a {
     letter-spacing: 3px; }
 
-.title {
+.title,
+.title-about {
   position: relative;
   display: inline-block;
   letter-spacing: 7px;
   font-family: 'Times New Roman', Times, serif !important; }
+
+.title-about span {
+  font-size: 50px !important; }
 
 .title::before {
   content: '';
@@ -159,10 +163,13 @@ header {
   left: 100%;
   margin-left: 15px; }
 
-.about-us-img {
+.about-us-img, .contact-container {
   box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75); }
+
+.contact-container {
+  background-color: #70E67A; }
 
 footer {
   height: 100px;
@@ -236,7 +243,11 @@ footer {
     content: "";
     width: 100px; }
   .about-text {
-    font-size: 15px !important; } }
+    font-size: 15px !important; }
+  .about-box {
+    flex-direction: column; }
+  .about-box-2 {
+    margin-top: 30px !important; } }
 
 @media (max-width: 768px) {
   .carousel-inner {
@@ -310,7 +321,11 @@ footer {
     .product-card .card-body a span {
       font-size: 7px !important; }
   .about-text {
-    font-size: 10px !important; } }
+    font-size: 10px !important; }
+  .about-box .about-box-1 h1 span, .about-box .about-box-2 h1 span {
+    font-size: 35px !important; }
+  .about-box .about-box-1 div p, .about-box .about-box-1 span, .about-box .about-box-2 div p, .about-box .about-box-2 span {
+    font-size: 18px !important; } }
 
 @media (max-width: 500px) {
   .sm-card-group {
@@ -319,4 +334,10 @@ footer {
   .title span:before,
   .title span:after {
     content: "";
-    width: 15px; } }
+    width: 15px; }
+  .about-box .about-box-1 h1, .about-box .about-box-2 h1 {
+    margin: 20px !important; }
+  .about-box .about-box-1 h1 span, .about-box .about-box-2 h1 span {
+    font-size: 25px !important; }
+  .about-box .about-box-1 div p, .about-box .about-box-1 span, .about-box .about-box-2 div p, .about-box .about-box-2 span {
+    font-size: 12px !important; } }
