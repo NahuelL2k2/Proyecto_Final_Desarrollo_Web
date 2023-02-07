@@ -2,7 +2,6 @@
     height: auto;
 }
 
-
 .scrollhide {
     overflow-x: hidden;
 }
@@ -41,7 +40,7 @@
         height: 300px !important;
     }
 
-    .card-body {
+    .card-body{
         .custom-button {
             background: map-get($map: $PaletaDeColores, $key: color4);
             background: linear-gradient(120deg, rgba(156, 254, 124, 1) 50%, rgba(255, 255, 255, 1) 100%);
@@ -49,7 +48,6 @@
                 7px 7px 20px 0px rgba(0, 0, 0, .1),
                 4px 4px 5px 0px rgba(0, 0, 0, .1);
             position: relative;
-
         }
 
         .custom-button:hover {
@@ -178,6 +176,20 @@
 .contact-container {
     @extend .about-us-img;
     background-color: map-get($map: $PaletaDeColores, $key: color4);
+}
+
+.product-container{
+    img{
+        @extend .about-us-img;
+    }
+}
+.product-container-1{
+    @extend .about-us-img;
+    background-color: map-get($map: $PaletaDeColores, $key: color2);
+}
+
+.espaciado{
+    letter-spacing: 5px;
 }
 
 // .shadow-in {

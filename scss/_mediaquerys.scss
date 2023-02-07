@@ -145,6 +145,19 @@
     .about-box-2{
         margin-top: 30px !important;
     }
+
+    .product-container{
+        flex-direction: column;
+        justify-content: center;
+        .product-img{
+            width: 80% !important;
+            margin-left: 10%;
+        }
+        .product-container-1{
+            margin-top: 10px;
+            width: 100% !important;
+        }
+    }
     
 
 }
@@ -347,6 +360,15 @@
             div p, span{
                 font-size: 12px !important;
             }
+        }
+    }
+    //Producto
+    .product-container-1{
+        h2,a{
+            font-size: 20px !important;
+        }
+        div p{
+            font-size: 15px !important;
         }
     }
 }
