@@ -54,6 +54,9 @@ header {
 .espaciado {
   letter-spacing: 5px; }
 
+.footer-abajo {
+  margin-top: 170px !important; }
+
 .carrousel {
   height: 650px; }
   .carrousel .carousel-inner {
