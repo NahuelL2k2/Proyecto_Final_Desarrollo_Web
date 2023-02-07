@@ -178,8 +178,11 @@ header {
   letter-spacing: 5px; }
 
 footer {
-  height: 100px;
-  background-color: #10693B; }
+  height: 40px;
+  background-color: #70E67A; }
+
+.float-bottom {
+  margin-top: 170px !important; }
 
 @media (max-width: 1400px) {
   .carousel-inner {
