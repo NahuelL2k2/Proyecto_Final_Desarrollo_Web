@@ -43,16 +43,18 @@ header {
   margin-bottom: 5px;
   margin-right: 5px; }
 
-#main {
-  height: auto; }
-
 .scrollhide {
   overflow-x: hidden; }
 
-.carrousel {
+.sombra-general, .carrousel, .card, .contact-container, .product-container img, .product-container .product-container-1 {
   box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75); }
+
+.espaciado {
+  letter-spacing: 5px; }
+
+.carrousel {
   height: 650px; }
   .carrousel .carousel-inner {
     height: 650px; }
@@ -65,9 +67,6 @@ header {
 .card {
   border: 1px solid white !important;
   background-color: #70E67A !important;
-  box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 15px 26px 9px rgba(0, 0, 0, 0.75);
   transition: transform .3s; }
   .card .card-img {
     width: 100%;
@@ -111,7 +110,7 @@ header {
   background: linear-gradient(135deg, white 0%, #70e67a 59%) !important; }
 
 .product-card {
-  height: 360px !important; }
+  height: 400px !important; }
   .product-card img {
     height: 75% !important; }
   .product-card .card-body h5 {
@@ -163,19 +162,11 @@ header {
   left: 100%;
   margin-left: 15px; }
 
-.about-us-img, .contact-container, .product-container img, .product-container-1 {
-  box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 12px 27px 4px rgba(0, 0, 0, 0.75); }
-
 .contact-container {
   background-color: #70E67A; }
 
-.product-container-1 {
+.product-container .product-container-1 {
   background-color: #70E6BC; }
-
-.espaciado {
-  letter-spacing: 5px; }
 
 footer {
   height: 40px;
@@ -216,11 +207,11 @@ footer {
     flex: 0 0 0 !important; }
   .product-card {
     width: 300px; }
-  .card-body h5 {
-    margin-bottom: 10px; }
-  .card-body a span {
-    font-size: 14px;
-    letter-spacing: 3px; } }
+    .product-card .card-body h5 {
+      margin-bottom: 10px; }
+    .product-card .card-body a span {
+      font-size: 14px;
+      letter-spacing: 3px; } }
 
 @media (max-width: 991px) {
   .nav-item {
@@ -253,10 +244,10 @@ footer {
     width: 100px; }
   .about-text {
     font-size: 15px !important; }
-  .about-box {
+  .contact-box {
     flex-direction: column; }
-  .about-box-2 {
-    margin-top: 30px !important; }
+    .contact-box .contact-box-2 {
+      margin-top: 30px !important; }
   .product-container {
     flex-direction: column;
     justify-content: center; }
@@ -283,8 +274,6 @@ footer {
       font-size: 10px !important; }
     .card .card-body a {
       font-size: 15px !important; }
-  #especificaciones {
-    font-size: 22px; }
   .carousel-caption .fs-1 {
     font-size: 15px !important; }
   .carousel-caption .fs-4 {
@@ -307,8 +296,6 @@ footer {
 @media (max-width: 576px) {
   .carousel-inner {
     display: none; }
-  #especificaciones {
-    font-size: 16px; }
   .card {
     width: 220px !important;
     height: 300px !important;
@@ -342,9 +329,9 @@ footer {
         font-size: 11px !important; }
   .about-text {
     font-size: 14px !important; }
-  .about-box .about-box-1 h1 span, .about-box .about-box-2 h1 span {
+  .contact-box .contact-box-1 h1 span, .contact-box .contact-box-2 h1 span {
     font-size: 35px !important; }
-  .about-box .about-box-1 div p, .about-box .about-box-1 span, .about-box .about-box-2 div p, .about-box .about-box-2 span {
+  .contact-box .contact-box-1 div p, .contact-box .contact-box-1 span, .contact-box .contact-box-2 div p, .contact-box .contact-box-2 span {
     font-size: 18px !important; } }
 
 @media (max-width: 500px) {
@@ -355,13 +342,15 @@ footer {
   .title span:after {
     content: "";
     width: 15px; }
-  .about-box .about-box-1 h1, .about-box .about-box-2 h1 {
+  .contact-box .contact-box-1 h1, .contact-box .contact-box-2 h1 {
     margin: 20px !important; }
-  .about-box .about-box-1 h1 span, .about-box .about-box-2 h1 span {
+  .contact-box .contact-box-1 h1 span, .contact-box .contact-box-2 h1 span {
     font-size: 25px !important; }
-  .about-box .about-box-1 div p, .about-box .about-box-1 span, .about-box .about-box-2 div p, .about-box .about-box-2 span {
+  .contact-box .contact-box-1 div p, .contact-box .contact-box-1 span, .contact-box .contact-box-2 div p, .contact-box .contact-box-2 span {
     font-size: 12px !important; }
-  .product-container-1 h2, .product-container-1 a {
+  .product-container-1 h2 {
+    font-size: 30px; }
+  .product-container-1 a {
     font-size: 20px !important; }
   .product-container-1 div p {
     font-size: 15px !important; } }

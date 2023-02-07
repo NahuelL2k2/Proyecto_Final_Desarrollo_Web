@@ -1,4 +1,6 @@
 @media (max-width: map-get($grid-breakpoints, xxl)) {
+
+    //Index
     .carousel-inner {
         height: 590px !important;
     }
@@ -58,22 +60,22 @@
 
     .product-card{
         width: 300px;
-    }
-
-    .card-body{
-        h5{
-            margin-bottom: 10px;
-        }
-        a{
-            span {
-                font-size: 14px;
-                letter-spacing: 3px;
+        .card-body{
+            h5{
+                margin-bottom: 10px;
+            }
+            a{
+                span {
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                }
             }
         }
     }
 }
 
 @media (max-width: 991px) {
+    //Header fondo blanco
     .nav-item {
         background-color: white;
         padding: 15px;
@@ -137,14 +139,15 @@
         font-size: 15px !important;
     }
 
-    //Contacto 
-
-    .about-box{
+    .contact-box{
         flex-direction: column;
+        .contact-box-2{
+            margin-top: 30px !important;
+        }
     }
-    .about-box-2{
-        margin-top: 30px !important;
-    }
+    
+
+    //Producto  
 
     .product-container{
         flex-direction: column;
@@ -197,10 +200,6 @@
 
     }
 
-    #especificaciones {
-        font-size: 22px;
-    }
-
     .carousel-caption {
         .fs-1 {
             font-size: 15px !important;
@@ -247,10 +246,6 @@
     //Index
     .carousel-inner {
         display: none;
-    }
-
-    #especificaciones {
-        font-size: 16px;
     }
 
     .card {
@@ -320,10 +315,10 @@
 
     //Contacto
 
-    .about-box{
-        .about-box-1, .about-box-2{
+    .contact-box{
+        .contact-box-1, .contact-box-2{
             h1 span{
-                font-size: 35px!important;
+                font-size: 35px !important;
             }
             div p, span{
                 font-size: 18px !important;
@@ -349,8 +344,8 @@
 
     //Contacto
 
-    .about-box{
-        .about-box-1, .about-box-2{
+    .contact-box{
+        .contact-box-1, .contact-box-2{
             h1{
                 margin: 20px !important;
             }
@@ -365,7 +360,10 @@
     }
     //Producto
     .product-container-1{
-        h2,a{
+        h2{
+            font-size: 30px;
+        }
+        a{
             font-size: 20px !important;
         }
         div p{
