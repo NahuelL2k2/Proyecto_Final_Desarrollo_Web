@@ -333,10 +333,12 @@ footer {
     .product-card .card-body h5 {
       font-size: 20px !important;
       margin-bottom: 3px; }
-    .product-card .card-body a span {
-      font-size: 7px !important; }
+    .product-card .card-body a {
+      padding: 0 !important; }
+      .product-card .card-body a span {
+        font-size: 11px !important; }
   .about-text {
-    font-size: 10px !important; }
+    font-size: 14px !important; }
   .about-box .about-box-1 h1 span, .about-box .about-box-2 h1 span {
     font-size: 35px !important; }
   .about-box .about-box-1 div p, .about-box .about-box-1 span, .about-box .about-box-2 div p, .about-box .about-box-2 span {
